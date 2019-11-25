@@ -1,0 +1,60 @@
+div.heroes-list{
+    color: #333;
+    display: grid;
+    grid-row-gap:15px;
+    grid-column-gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    padding-top: 15px;
+    padding: 15px;
+    align-items: center;
+}
+#agi-h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #A83806;
+    text-align: center;
+}
+.agi-img{
+    width: 30px;
+    height: 30px;
+}
+.hero-link {
+    position: relative;
+    width: 121px;
+    height: 77px;
+    padding: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #A83806;
+}
+.hero-icon {
+    width: 121px;
+    height: 77px;
+    padding: 10px;
+}
+.main-body {
+    margin: 150px 200px;
+    border-radius: 15px;
+    background-color: #b0c3d9;
+}
+@media screen and (max-width: 1440px) {
+    .main-body {
+        margin: 75px 50px;
+    }
+}
+@media screen and (max-width: 720px) {
+    .main-body {
+        margin: 50px 25px;
+    }
+    div.heroes-list {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+    .hero-link {
+        width: 125px;
+        height: 125px;
+    }
+    .hero-img {
+        width: 125px;
+        height: 125px;
+    }
+}
